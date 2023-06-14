@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"></style>
+    <title>Usuário</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Cadastro de Usuário</h1>
+            <form action="usuario.php" method="post">
+                
+                <div class="flexbox">
+                    <div class="esquerda">
+                        <label>Nome completo* </label>
+                        <input type="text" class="inputTxt" name="nome" autocomplete="off" required><br><br>
+                        <label>Telefone* </label>
+                        <input type="text" class="inputTxt" name="telefone" autocomplete="off" placeholder="(12)1234-1234" required><br><br>
+                        <label>Celular* </label>
+                        <input type="text" class="inputTxt" name="celular" autocomplete="off" placeholder="(12)12345-1234" required><br><br>
+                    </div>
+                    <div class="direita">
+                        <label>Email* </label>
+                        <input type="text" class="inputTxt" name="email" autocomplete="off" placeholder="usuario@gmail.com" required><br><br>
+                        <label>Endereço* </label>
+                        <input type="text" class="inputTxt" name="endereco" autocomplete="off" placeholder="Rua Fulano, 123" required><br><br>
+                        <label>CEP* </label>
+                        <input type="text" class="inputTxt" name="cep" autocomplete="off" placeholder="01234-123" required><br><br>
+                    </div>
+                </div>
+                <label>Serviço* </label>
+                <input type="text" class="inputTxt" name="servico" autocomplete="off" required><br><br>
+                <label>Conheceu como* </label>
+                        <input type="radio" class="radioOp" name="conheceuComo" value="Facebook" required>
+                        <label>Facebook</label>
+                        <input type="radio" class="radioOp" name="conheceuComo" value="Elo 7" required>
+                        <label>Elo 7</label>
+                        <input type="radio" class="radioOp"name="conheceuComo" value="Site" required>
+                        <label>Site</label>
+                        <input type="radio" class="radioOp" name="conheceuComo" value="Pessoalmente" required>
+                        <label>Pessoalmente</label>
+                        <input type="radio" class="radioOp"  name="conheceuComo" value="Outros" required>
+                        <label>Outros</label><br><br>
+                <label>Breve descrição* </label><br>   
+                <textarea class="inputTxt" name="descricao" rows="2" cols="50" required></textarea><br><br>
+                <div class="divBtn">
+                    <input type="submit" value="Cadastrar" id="btnCad">
+                    <button class="btn" onclick="location.href='consulta_usuario.php'">Consulta</button>
+                    <button class="btn" onclick="location.href='index.html'">Menu</button>
+                </div>
+            <form>
+        </div>
+    </div>    
+</body>
+</html>

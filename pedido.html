@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"></style>
+    <title>Produto</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Cadastro de Pedido</h1>
+            <form action="pedido.php" method="post">
+                <label>Id do usuário* </label>
+                <input type="number" class="inputTxt" name="id_usu" autocomplete="off" required><br><br>
+                <div class="flexbox">
+                    <div class="esquerda">
+                        <label>Data do Pedido* </label>
+                        <input type="date" class="inputTxt" name="dataa" autocomplete="off" required><br><br>
+                        <label>Valor à vista* </label>
+                        <input type="number" step="0.01" class="inputTxt" name="aVista" autocomplete="off" placeholder="00,00" required><br><br>
+                        <label>Taxa* </label>
+                        <input type="number" step="0.01" class="inputTxt" name="taxa" autocomplete="off" placeholder="00,00" required><br><br>
+                        <label>Frete* </label>
+                        <input type="number" step="0.01" class="inputTxt" name="frete" autocomplete="off" placeholder="00,00" required><br><br>
+                    </div>
+                    <div class="direita">
+                        <label>Total* </label>
+                        <input type="number" step="0.01" class="inputTxt" name="total" autocomplete="off" placeholder="00,00" required><br><br>
+                        <label>Sinal de Pagamento </label>
+                        <input type="number" step="0.01" class="inputTxt" name="sinal" autocomplete="off" placeholder="00,00"><br><br>
+                        <label>Valor das parcelas </label>
+                        <input type="number" step="0.01" class="inputTxt" name="parcelas" autocomplete="off" placeholder="00,00"><br><br>
+                        <label>Quantidade de parcelas </label>
+                        <input type="number" step="0.01" class="inputTxt" name="qntdParcelas" autocomplete="off" placeholder="00"><br><br>
+                    </div>
+                </div>
+                <label>Forma de Pagamento* </label>
+                        <input type="radio" class="radioOp" name="formaPag" value="Boleto" required>
+                        <label>Boleto</label>
+                        <input type="radio" class="radioOp" name="formaPag" value="Dinheiro" required>
+                        <label>Dinheiro</label>
+                        <input type="radio" class="radioOp"name="formaPag" value="Cartão" required>
+                        <label>Cartão</label>
+                        <input type="radio" class="radioOp" name="formaPag" value="Deposito" required>
+                        <label>Depósito</label>
+                        <input type="radio" class="radioOp"  name="formaPag" value="Outros" required>
+                        <label>Outros</label><br><br>
+                <label>Detalhes* </label><br>   
+                <textarea class="inputTxt" name="detalhes" rows="2" cols="50" required></textarea><br><br>
+                <div class="divBtn">
+                    <input type="submit" value="Cadastrar" id="btnCad">
+                    <button class="btn" onclick="location.href='consulta_pedido.php'">Consulta</button>
+                    <button class="btn" onclick="location.href='index.html'">Menu</button>
+                </div>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>

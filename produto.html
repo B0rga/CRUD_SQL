@@ -1,0 +1,34 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"></style>
+    <title>Usuário</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Cadastro de Produto</h1>
+            <form action="produto.php" method="post">
+                <label>Nome do produto* </label>
+                <input type="text" class="inputTxt" name="nome" autocomplete="off" required><br><br>
+                    
+                <div class="flexbox">
+                    <div class="esquerda">
+                        <label>Quantidade* </label>
+                        <input type="text" class="inputTxt" name="qntd" autocomplete="off" placeholder="00" required><br><br>
+                    </div>
+                    <div class="direita">
+                        <label>Valor* </label>
+                        <input type="number" step="0.01" class="inputTxt" name="valor" autocomplete="off" placeholder="00,00" required><br><br>
+                    </div>
+                </div>
+                <br><br>
+                <div class="divBtn">
+                    <input type="submit" value="Cadastrar" id="btnCad">
+                    <button class="btn" onclick="location.href='consulta_produto.php'">Consulta</button>
+                    <button class="btn" onclick="location.href='index.html'">Menu</button>
+                </div>
+            <form>
+        </div>
+    </div>    
+</body>
+</html>

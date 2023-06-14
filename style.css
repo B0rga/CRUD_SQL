@@ -1,0 +1,191 @@
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+body{
+    color:lavender;
+    background-color: #1c1c1c;
+}
+
+*{
+    font-family:monospace;
+}
+
+h1{
+    font-size: 30pt;
+    text-align: center;
+}
+
+.btn{
+    background-color: #1c1c1c;
+    border: solid 1px lavender;
+    border-radius: 2px;
+    color: lavender;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14pt;
+    margin: 4px;
+    width: 120px;
+}
+
+.btn:hover{
+    background-color: lavender;
+    color: #1c1c1c;
+    transition: 0.3s;
+
+}
+
+#btnCad{
+    background-color: lavender;
+    border: solid 1px lavender;
+    border-radius: 2px;
+    color: #1c1c1c;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14pt;
+    margin: 4px;
+    width: 120px;
+}
+
+#btnCad:hover{
+    background-color: #1c1c1c;
+    color: lavender;
+    transition: 0.3s;
+
+}
+
+/*========================================================================================================================*/
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    font-size: 12pt;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.esquerda{
+    margin-right: 40px;
+}
+
+/*========================================================================================================================*/
+
+.divBtn{
+    text-align: center;
+}
+
+.inputTxt{
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: 0;
+    color: lavender;
+    font-size: 12pt;
+    width: 100%;
+}
+
+.inputTxt:focus{
+    border-color: lavender;
+    transition: 0.3s;
+}
+
+.selectOps{
+    background: none;
+    outline: 0;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: lavender;
+    font-size: 12pt;
+}
+
+.selectOps option{
+    color: #1c1c1c;
+}
+
+.radioOp{
+    cursor: pointer;
+    outline: none;
+}
+
+#sucesso{
+    color: greenyellow;
+}
+
+/*========================================================================================================================*/
+
+table{
+    width: 100%;
+    font-size: 10pt;
+    text-align: center;
+}
+
+th{
+    padding: 4px;
+}
+
+td{
+    padding: 4px;
+}
+
+.divBusca{
+    display: flex;
+    align-items:baseline;
+    font-size: 12pt;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#inputBusca{
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: 0;
+    color: lavender;
+    font-size: 12pt;
+    width: 300px;
+}
+
+#inputBusca:focus{
+    border-color: lavender;
+    transition: 0.3s;
+}
+
+#btnBusca{
+    background-color: #1c1c1c;
+    border: solid 1px;
+    border-radius: 2px;
+    color: lavender;
+    cursor: pointer;
+    margin-left: 8px;
+    height: 26px;
+    width: 80px;
+    font-size: 12pt;
+}
+
+#btnBusca:hover{
+    background-color: lavender;
+    color: #1c1c1c;
+    transition: 0.3s;
+
+}
+
+.btnTrash{
+    cursor: pointer;
+    color:crimson;
+}
