@@ -1,6 +1,6 @@
 <?php
     if(!empty($_GET['id'])){
-        include("banco_conexao.php");
+        include("../banco_conexao.php");
 
         $id = $_GET['id'];
         $sqlSelect ="SELECT * FROM pedido WHERE id = $id"; 

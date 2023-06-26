@@ -1,6 +1,6 @@
 <?php
 
-    include("banco_conexao.php");
+    include("../banco_conexao.php");
 
     $nome = $_POST['nome'];
     $qntd = $_POST['qntd'];

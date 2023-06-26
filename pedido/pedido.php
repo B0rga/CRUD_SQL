@@ -1,6 +1,6 @@
 <?php
 
-    include("banco_conexao.php");
+    include("../banco_conexao.php");
 
     $id_usu = $_POST['id_usu'];
     $dataa = $_POST['dataa'];
